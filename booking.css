@@ -1,7 +1,10 @@
 *{
-    margin: 0 auto;
+    margin: 0px;
     padding: 5px;
     font-family: "raleway", sans-serif;
+}
+.imad,.imag,.iam,.iams{
+    object-fit: cover;  
 }
 
  /****************************** css lié au header *********************************************/
@@ -9,6 +12,7 @@ header{
     padding: 0px;
     margin: 0px;
     height: 100px;
+    width:100%;
     background-color: #fff;
 }
 
@@ -19,7 +23,7 @@ header{
 
 #menu-navig{
     float: right;
-    padding-right: 20px;
+    padding-right: 0px;
     display: table;
     text-align: center;
     
@@ -29,19 +33,18 @@ header{
 nav li{
     list-style-type: none;
     float: right;
+    padding-top: 20px;
 }
 
 nav a{
     color:#000;
-    display: inline-block;
     text-decoration: none;
-    font-weight: bolder;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 nav li:hover{
     border-top: 3px solid #0065fc;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 nav a:hover{
@@ -52,40 +55,44 @@ nav a:hover{
 
 .besoins{
     height: 20%;
-    width: 100%;
+    width: 99%;
     background-color: #fff;
     padding-bottom: 10px;
     margin-bottom: 10px;
     
 }
-
+/* barre-de-recherche */
 .bar-recher{
     display: flex;
     padding: 0px;
     margin: 0px;
-    width: 500px; 
+    width: 400px; 
 }
 
-.point, .adres, .recher{
-     border: #f2f2f2 solid 1px; 
+ .adres, .recher{
+     border: #f2f2f2 solid 0.5px; 
     margin: 0px;
     padding: 0px;
-     width: 400px; 
-    height: 50px; 
+    width: 300px; 
+    height: 45px; 
     justify-content: center;
+
 }
 
 .adres{
     border-left: none;
     border-right: none;
     width: 500px;
+    text-align: left;
 }
 
 .point{
+    width: 150px; 
+    height: 37px; 
     border-right:transparent solid 1px;
     background-color: #f2f2f2;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .ig-pt{
@@ -97,8 +104,8 @@ nav a:hover{
     color: #fff;
     text-align: center;
     background-color: #0065fc;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .r1{
@@ -108,12 +115,12 @@ nav a:hover{
     font-size: 1em;
 }
 
-/* filtres */
+/* zone-des-filtres */
 
 .filtre{
      justify-content: left; 
     height: 80px;
-    width: 100%;
+    width: 99%;
      padding-top: 20px;
     }
 
@@ -121,12 +128,11 @@ nav a:hover{
      display: inline-block; 
     border: #f2f2f2 solid 3px;
     height: 30px;
-    width: 200px;
     padding-left: 0px;
     padding-top: 0px;
     border-radius: 50px;
     margin-left: 10px;
-    
+    border-left: none;  
 }
 
 .fil-u{
@@ -141,15 +147,15 @@ nav a:hover{
 .fil-p{
     float: left;
     background-color: #deebff;
-    height: 25px;
-    width: 25px;
+    height: 27px;
+    width: 30px;
     border-radius: 30px;
     padding-left: 0px;
     margin: 0px;
 }
 
 .fil-i,.fil-p{
-    display: inline-flex;
+     display: inline-flex; 
 }
 
 .f1{
@@ -176,7 +182,7 @@ nav a:hover{
     color: #fff;
 }
 
-/* intro section deux */
+/* introduction-de-la-section-des-hébergements */
 
 .pub{
     height: 50px;
@@ -205,7 +211,7 @@ nav a:hover{
     display: inline-block;
 }
 
-/***************************************** pied de page ******************************************/
+/***************************************** pied-de-page ******************************************/
 
 footer{
     height: 200px;
@@ -213,6 +219,7 @@ footer{
     padding: 0px;
     margin: 0px;
     margin-top: 10px;
+    width: 100%;
     
     
 
@@ -230,14 +237,14 @@ footer{
 .col1, .col2, .col3{
     display: inline-block;
     font-size: 1em;
-    padding:10px ;
+    padding:30px ;
 }
 
-/********************************** section des hébergements  ****************************/
+/********************************** section-des-hébergements  ****************************/
 
 .sec-phéberg{
     height: 800px;
-    width: 100%;
+    width: 99%;
     margin: 0px;
     padding: 0px;
     margin-bottom: 10px;
@@ -248,11 +255,12 @@ footer{
     width: 100%;
     margin: 0px;
     padding: 0px;
+    gap:10px;
 }
 
 /* hébergement de la gauche */
 
-.hébergG{
+.héberg-g{
     width: 70%;
     height: 100%;
     margin: 0px;
@@ -268,9 +276,9 @@ a{
 }
 
 
-.DHG{
+.dhg{
     height: 100%;
-    width: 100%;
+    width: 99%;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -290,7 +298,7 @@ a{
 
 }
 
-.D-imag{
+.d-imag{
     padding: 0px;
     margin: 0px;
     height: 175px; 
@@ -299,7 +307,7 @@ a{
 }
 
 
-.D-AHG{
+.d-ahg{
     flex-direction: column;
     height: 280px;
     width: 305px;
@@ -311,7 +319,7 @@ a{
     display: flex;
 }
 
-.D-info{
+.d-info{
 height:100px;
 width: 250px;
 display: inline;
@@ -319,20 +327,20 @@ padding-left: 0px;
 margin: 0px;
 }
 
-.D-inf {
+.d-inf {
    display: inline;  
    height: 5px;
    width: 100px;
    padding-bottom: 10px;
 }
 
-.ET{
+.et{
     color: #0065fc;
     padding: 0px;
     margin: 0px;
 }
 
-.ET-4,.ET-5{
+.et-q,.et-c{
     color: #f2f2f2;
 }
 
@@ -342,13 +350,25 @@ h3, .p-info{
     padding-left: 10px;
 }
 
-.L1HG,.L2HG{
+.p-info{
+    font-size:20px;
+}
+
+.h3{
+    font-size: 35px;
+}
+
+.luhg{
     padding: 0px;
     margin: 0px;
     padding-top: 30px;
     display: flex;  
     width: 100%;
     height: 300px;
+    flex-direction: row;
+    gap:10px;
+    flex-wrap: wrap;
+
 }
 
 .h-mar{
@@ -366,20 +386,20 @@ h3, .p-info{
     display: inline;
 }
 
-.EU{
+.eu{
     float: right;
     display: inline;
     padding-right: 50px;
 }
 
-.hébergD{
+.héberg-d{
     float: right;
     width: 26%;
     height: 760px;
     padding-top: 10px;
 }
 
-.DHD{
+.dhd{
     height: 770px;
     width: 100%;
     border-radius: 20px;
@@ -388,7 +408,7 @@ h3, .p-info{
     
 }
 
-.D-AHD{
+.d-ahd{
     flex-direction: column;
     height: 170px;
     width: 95%;
@@ -398,10 +418,12 @@ h3, .p-info{
     border-radius: 20px;  
     background-color: #fff;
     margin-top: 15px;
+    gap: 10px;
 }
 
-.D-AHD, .D-AHG, .DI-AM,.DS-AMs {
+.d-ahd, .d-ahg, .di-am,.ds-ams{
     box-shadow: #e0dfdf 10px 10px 8px;
+    
 }
 
 .imad{
@@ -414,12 +436,12 @@ h3, .p-info{
     display: inline;
 }
 
-.D-imad{
+.d-imad{
     float: left;
     padding: 2px;
 }
 
-.D-infod{
+.d-infod{
     float: right;
     width: 195px;
     height: 130px;
@@ -437,43 +459,43 @@ h3, .p-info{
     font-size: 1.2em;
 }
 
-/******************************************* section des activites ******************************/
+/******************************************* section-des-activites ******************************/
 
-.h-AM{
-    display: block;
+.h-am{
+    display: inline;
     height: 30px;
     text-align: left;
 }
 
-.SP-AM{
+.sp-am{
     height:700px;
     width:100%;
     padding: 0px;
     margin: 0px;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-.DP-AM{
+.dp-am{
     height: 99%;
     width: 100%;
     padding: 0px;
     margin: 0px;
-    display: block;
+    display: inline-block;
+    /* flex-direction: row; */
 }
 
-.AR-AM{
+.ar-am{
     
-    height: 600px; 
+    height: 400px; 
     width: 350px; 
     padding: 0px;
     margin: 0px; 
     padding-top: 30px;
     display: inline-block;
-
 }
 
-.DI-AM{
+.di-am{
     height: 473px;
     width: 305px;
     padding: 0px;
@@ -481,9 +503,10 @@ h3, .p-info{
     padding-top: 3px;
     border-radius: 30px; 
     background-color: transparent;
+    gap:20px;
 }
 
-.iAM{ 
+.iam{ 
     height: 415px;
     width: 300px;
     border-top-left-radius: 20px;
@@ -501,26 +524,27 @@ h3, .p-info{
     border-bottom-right-radius: 20px;
 }
 
-.D-imAM{
+.d-imam{
     height: 425px;
     width: 305px;
     margin: 0px;
     padding: 0px;
+
     
 }
 
+
+
 /* activité dupliquée */
 
-.D-imAMs{
+.d-imams{
     height: 200px;
     width: 300px;
     margin: 0px;
     padding: 0px;
-    /* border: #000 solid 1px; */
-    
 }
 
-.iAMs{
+.iams{
     height: 190px;
     width: 290px;
     border-top-left-radius: 20px;
@@ -528,38 +552,137 @@ h3, .p-info{
 }
 
 .Détails{
-    height: 15px;
+    height: 30px;
     width: 285px;
-    text-align: left;
     border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
-    
+    border-bottom-right-radius: 20px; 
 }
 
-.DS-AMs{
+.ds-ams{
     height:225px;
     width: 290px;
     border-radius: 30px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.DI-AMs{
+.di-ams{
     padding: 0px;
     margin: 0px;
+    gap:20px;
 
 }
 
-/**************************** partie responsive ***************************/
+/**************************** partie-responsive-du-projet ***************************/
 
-@media screen and (min-width:100px){
+/*********** Téléphones et p.Laptop  *******/
 
-    .logo-projet{
+@media screen and (max-width:1024px){
+
+    
+
+    header{
         width: 100%;
-        height: 30%;
-        padding-left: 30px;
-        margin-right: 30px;
+        height: 5%; 
+        margin: 0px;
+        padding: 0px;
+        display: flex;  
+        flex-direction: column; 
+    }
+
+    /* corps de la page */
+
+    .bar-recher{
+        width: 100%;
+        height: 30px;
+        display: flex;
+    }
+
+    .filtre{
+        width: 100%;
+        height: 200px;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .f2{
+        height: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+   .sec-phéberg, .héberg-d,.héberg-g{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+   
+   }
+
+   .héberg-d, .héberg-g{
+    width: 90%;
+   }
+
+    .dhg,.dhd{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+     .luhg{
+        width: 100%;
+        height: 100%;
+         display: inline-block; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .ahd,.ahg{
+        width: 100%;
+        height:20%;
+        display: block;
+        flex-direction: column;
+    }
+
+    .d-ahg{
+        width: 100%;
+        height:15%;
+    }
+
+
+    .imag, .d-imag{
+        width: 100%;
+    }
+
+    .sp-am,.dp-am{
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display:inline-block;
+    }
+       /* pides de page */
+    footer{
+        width:100%;
+        height:500px;
+    }
+
+    .foot{
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+
+    }
+
+    .col1,.col2, .col3{
+        display: inline-block;
+        width: 90%;
+        height: 100px;
+        flex-direction: column;
     }
 
    
-    
 }
 
