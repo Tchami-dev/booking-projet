@@ -1,8 +1,9 @@
 *{
     margin: 0px;
-    padding: 5px;
     font-family: "raleway", sans-serif;
+    padding: 5px; 
 }
+
 .imad,.imag,.iam,.iams{
     object-fit: cover;  
 }
@@ -150,7 +151,7 @@ nav a:hover{
     height: 27px;
     width: 30px;
     border-radius: 30px;
-    padding-left: 0px;
+    padding-left: 10px;
     margin: 0px;
 }
 
@@ -177,7 +178,7 @@ nav a:hover{
 }
 
 .fil-i:hover{
-    box-shadow: #deebff 15px 10px 8px;
+    box-shadow: #deebff 5px 5px 8px;
     background-color: #0065fc;
     color: #fff;
 }
@@ -199,6 +200,8 @@ nav a:hover{
     border-radius: 15px;
     padding-left: 10px;
     background-color: #fff;
+    padding-bottom: 8px;
+    border-left: none;
 }
 
 .ig-I{
@@ -227,9 +230,11 @@ footer{
 
 .foot{
     height: 200px;
-    width: 1000px;
+    width: 100%;
     padding: 0px;
     display: inline-flex;
+    flex-direction: row;
+    gap: 20%;
     margin: 0px;
     padding-top: 20px;
 }
@@ -237,7 +242,7 @@ footer{
 .col1, .col2, .col3{
     display: inline-block;
     font-size: 1em;
-    padding:30px ;
+    /* padding:30px ; */
 }
 
 /********************************** section-des-hébergements  ****************************/
@@ -308,15 +313,15 @@ a{
 
 
 .d-ahg{
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 280px;
     width: 305px;
     border: #fff solid 3px;
     padding: 0px;
     margin: 0px;
-    border-radius: 20px;  
-    background-color: #fff;
-    display: flex;
+    border-radius: 20px;   
+    background-color: #fff; 
+    /* display: flex; */
 }
 
 .d-info{
@@ -359,9 +364,11 @@ h3, .p-info{
 }
 
 .luhg{
+
+    margin-top: 30px;
     padding: 0px;
     margin: 0px;
-    padding-top: 30px;
+    padding-left: 5px;
     display: flex;  
     width: 100%;
     height: 300px;
@@ -372,19 +379,13 @@ h3, .p-info{
 }
 
 .h-mar{
-    height: 5%;
-    width: 100%;
-    float: left;
-    padding-top: 20px;
-
+    padding-bottom: 30px;
+    padding-top: 3%;
 }
 
 /* hébergements de la droite */
 
-.pp{
-    float: left;
-    display: inline;
-}
+
 
 .eu{
     float: right;
@@ -405,6 +406,7 @@ h3, .p-info{
     border-radius: 20px;
     background-color: #f2f2f2;
     padding-top: 30px;
+    padding-left: 5%;
     
 }
 
@@ -422,15 +424,16 @@ h3, .p-info{
 }
 
 .d-ahd, .d-ahg, .di-am,.ds-ams{
-    box-shadow: #e0dfdf 10px 10px 8px;
+    box-shadow: #e0dfdf 5px 5px 8px;
     
 }
 
 .imad{
     height: 165px;
     width: 150px;
-    border-bottom-left-radius: 20px; 
-    border-top-left-radius: 20px; 
+     border-bottom-left-radius: 20px;  
+    border-top-left-radius: 20px;  
+   
     margin: 0px;
     padding: 0px;
     display: inline;
@@ -457,7 +460,9 @@ h3, .p-info{
 
 .pp,.h-mar{
     font-size: 1.2em;
+    float: left; 
 }
+
 
 /******************************************* section-des-activites ******************************/
 
@@ -477,6 +482,7 @@ h3, .p-info{
 }
 
 .dp-am{
+    justify-content: space-between;
     height: 99%;
     width: 100%;
     padding: 0px;
@@ -503,11 +509,11 @@ h3, .p-info{
     padding-top: 3px;
     border-radius: 30px; 
     background-color: transparent;
-    gap:20px;
+    gap:30px;
 }
 
 .iam{ 
-    height: 415px;
+    height: 430px;
     width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -525,15 +531,11 @@ h3, .p-info{
 }
 
 .d-imam{
-    height: 425px;
+    height: 435px;
     width: 305px;
     margin: 0px;
-    padding: 0px;
-
-    
+    padding: 0px;   
 }
-
-
 
 /* activité dupliquée */
 
@@ -545,8 +547,8 @@ h3, .p-info{
 }
 
 .iams{
-    height: 190px;
-    width: 290px;
+    height: 195px;
+    width: 315px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -556,20 +558,22 @@ h3, .p-info{
     width: 285px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px; 
+    text-align: left;
+    
 }
 
 .ds-ams{
-    height:225px;
-    width: 290px;
+    padding-bottom: 20px;
+    height:220px;
+    width: 315px;
     border-radius: 30px;
     flex-direction: column;
-    gap: 20px;
 }
 
 .di-ams{
     padding: 0px;
     margin: 0px;
-    gap:20px;
+    /* gap:50px; */
 
 }
 
@@ -578,9 +582,7 @@ h3, .p-info{
 /*********** Téléphones et p.Laptop  *******/
 
 @media screen and (max-width:1024px){
-
     
-
     header{
         width: 100%;
         height: 5%; 
@@ -684,7 +686,9 @@ h3, .p-info{
     }
 
    .intro-pub{
-    width: 70%;
+    display: inline-flex;
+    width: 40%;
+
 
    }
 }
