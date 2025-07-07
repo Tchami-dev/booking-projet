@@ -14,79 +14,80 @@
 
   <!-- en-tete-de la-page -->
     <header>
-
-      <div id="logo-projet">
-          <img src="images relatives aux hébergements/logo du projet/Booki.png" alt="logo projet booking" >
+      <div class="div__header">
+      <!-- logo du projet -->
+      <div class="div__logo">
+          <img src="images relatives aux hébergements/logo du projet/Booki.png" alt="logo projet booki" >
       </div>
       
       <!-- liens-de-navigation -->
-      <div id="menu-navig">   
+      <div class="div__navigation">   
         <nav>
           <ul>
-             <li> <a href="#inscription">S'inscrire</a>  </li> 
-            <li> <a href="#actif">Activités</a>  </li> 
-            <li> <a href="#héberg" >Hébergements</a>  </li> 
+            <div class="div__navigation--liens"> <li> <a href="#héberg" >Hébergements</a>  </li> </div>
+            <div class="div__navigation--liens"> <li> <a href="#actif">Activités</a>  </li> </div>
           </ul>
         </nav>
       </div>   
 
+      </div>
     </header>
 
     <main>
     <!--------------section-du-préambule ------------->
     
  <section class="besoins">
-   <div class="div-bes">
+   <div class="div__besoins">
 
-      <h1>Trouver votre hébergement pour des vacances de revê</h1>
+      <h1>Trouver votre hébergement pour des vacances de revê</h1><br>
         <p>En plein centre ville ou en pleine nature</p> <br>
 
         <!-- barre-de-recherche -->
-     <div class="bar-recher">
-        <div class="point">
-          <i class="fa fa-map-marker ig-pt"></i>
+     <div class="div__barre-de-recherche">
+        <div class="pointeur">
+          <i class="fa fa-map-marker icone-pointeur"></i>
         </div>
 
-        <div class="adres">
-          <p class="r1">Marseille, France</p>
+        <div class="adresse">
+          <p class="resultat-recherche">Marseille, France</p>
         </div>
 
-        <div class="recher">
-          <p class="r1">Recherche</p>
+        <div class="recherche">
+          <p class="saisie-recherche">Recherche</p>
         </div>
       </div> <br>
 
       <!-- zone-des-filtres -->
       <div class="filtre">
          
-          <p class="f2">Filtres</p>
+          <p class="presentation__types--filtres">Filtres</p>
 
-        <div class="fil-i">
-          <div class="fil-p">
-            <i class="fa fa-usd ig"></i>
+        <div class="types__filtres">
+          <div class="representation__visuelle">
+            <i class="fa fa-usd icone--filtre"></i>
           </div>
-          <p class="f1">Economique</p>
+          <p class="categories--filtres">Economique</p>
         </div>
 
-        <div class="fil-i">
-          <div class="fil-p">
-            <i class="fa fa-child ig"></i>
+        <div class="types__filtres">
+          <div class="representation__visuelle">
+            <i class="fa fa-child icone--filtre"></i>
           </div>
-          <p class="f1">Familial</p>
+          <p class="categories--filtres">Familial</p>
         </div>
 
-        <div class="fil-i">
-          <div class="fil-p">
-            <i class="fa fa-heart ig"></i>
+        <div class="types__filtres">
+          <div class="representation__visuelle">
+            <i class="fa fa-heart icone--filtre"></i>
           </div>
-          <p class="f1">Romantique</p>
+          <p class="categories--filtres">Romantique</p>
         </div>
 
-        <div class="fil-i">
-          <div class="fil-p">
-            <i class="fa fa-paw ig"></i>
+        <div class="types__filtres">
+          <div class="representation__visuelle">
+            <i class="fa fa-paw icone--filtre"></i>
           </div>
-          <p class="f1">Animaux autoriés</p>
+          <p class="categories--filtres">Animaux autoriés</p>
         </div>
 
       </div>
